@@ -1,8 +1,8 @@
 {
-  "name": "smallscenes",
+  "name": "jusfoun-pc",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "ws880321 <wangshuai@vip.126.com>",
+  "description": "jusfoun-pc",
+  "author": "jusfoun-fe.github.io",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -10,8 +10,6 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "fs": "0.0.1-security",
     "vue": "^2.3.3",
     "vue-router": "^2.6.0"
   },

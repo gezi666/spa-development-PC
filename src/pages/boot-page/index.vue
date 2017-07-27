@@ -1,70 +1,55 @@
 <template>
   <div class="boot-page">
-    <header>
-      <div class="inner">
-        <h1 class="logo"></h1>
-        <div class="user-area"></div>
-      </div>
-    </header>
-    <List-tab class="main"></List-tab>
-    <footer>
-      <span>京ICP备12012279号 版权所有 九次方大数据信息集团有限公司</span>
-      <span>Copyright 2015 by Jusfoun.com. All Right Reserved</span>
-    </footer>
+    <nav>
+      <ul>
+        <router-link tag='li' v-for="i in 6" class="list-item" to='/scenes-1' key='i'>
+          tab
+        </router-link>
+      </ul>
+    </nav>
+    <List-tab class="tab-list"></List-tab>
   </div>
 </template>
 
 <script>
-  import fetch from '@/assets/js/fetch.js'
-  import ListTab from '@/pages/boot-page/components/list.vue'
-  export default {
-    name: 'bootPage',
-    data () {
-      return {
-        msg: 'Welcome to 金融小场景'
-      }
-    },
-    components: {
-      ListTab
+import ListTab from '@/pages/boot-page/components/list.vue'
+export default {
+  name: 'bootPage',
+  data () {
+    return {
+      msg: 'Welcome to 金融小场景'
     }
+  },
+  components:{
+    ListTab
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .boot-page {
-  }
-  header{
-    height:55px;
-    background-color: #000;
-  }
-  .inner{
-    width: 1280px;
+
+  .boot-page,nav {
+  width: 1280px;
+  margin: auto;
+}
+  nav ul{
     display: flex;
-    justify-content: space-between;
-    margin:auto;
-  }
-  header h1{
-    width: 150px;
+    width: 100%;
     height:55px;
-    background: url("../../assets/img/logo.png") no-repeat center;
   }
-  .user-area{
-    width: 170px;
-    height:55px;
-    background: url("../../assets/img/hotline.png") no-repeat center;
-  }
-  .main{
-    min-height:calc(100vh - 110px);
-    width: 1280px;
-    margin: auto;
-  }
-  footer{
-    line-height:55px;
-    height:55px;
-    background-color: #000;
-    color: #7E7D7F;
+
+  nav li{
+    flex:1;
     display: flex;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #333333;
+  }
+  .tab-list{
+    display: flex;
+    min-height:calc(100vh - 165px);
+    align-items: center;
+    justify-content: center;
   }
 </style>
