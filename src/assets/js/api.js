@@ -1,5 +1,5 @@
 import axios from 'axios'
-import * as config from '../../../static/config.js'
+const config=require('../../../static/config.js')
 console.log(config)
 // axios 配置
 axios.defaults.timeout = config.TIMEOUT;
