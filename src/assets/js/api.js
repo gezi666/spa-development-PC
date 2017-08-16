@@ -1,13 +1,11 @@
 import axios from 'axios'
-const config=require('../../../static/config.js')
-console.log(config)
 // axios 配置
 axios.defaults.timeout = config.TIMEOUT;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 axios.defaults.baseURL = '';
 // const baseurl = 'http://result.eolinker.com/wTGsdEJ4170e9cb44499d99378a2adf2621dc706bee9c6f?uri='
-const baseurl = config.BASEURL
-const baseurlMock = config.BASEURLMOCK
+const baseurl = ''
+const baseurlMock = ''
 // axios.defaults.withCredentials = true;
 
  export function post(url, params) {
