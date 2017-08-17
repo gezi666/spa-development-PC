@@ -10,13 +10,13 @@ const baseurlMock = ''
 
  export function post(url, params) {
     return new Promise((resolve, reject) => {
-        axios.post(baseurl + url, params)
+        axios.post(baseurl + url, params:params)
             .then(response => {
                 if (response.code!='501') {
 
                     resolve(response.data);
                 } else if(response.code=='501') {
-                    axios.get(baseurlMock + url, params)
+                    axios.get(baseurlMock + url, params:params)
                         .then(response => {
                             resolve(response.data);
                         })
@@ -27,7 +27,7 @@ const baseurlMock = ''
 
             })
             .catch((error) => {
-                axios.get(baseurlMock + url, params)
+                axios.get(baseurlMock + url, params:params)
                     .then(response => {
                         resolve(response.data);
                     })
@@ -39,12 +39,12 @@ const baseurlMock = ''
 }
 export function get(url, params) {
     return new Promise((resolve, reject) => {
-        axios.get(baseurl + url, params)
+        axios.get(baseurl + url, params:params)
             .then(response => {
                 if (response.code!="501") {
                     resolve(response.data);
                 } else if(response.code=='501') {
-                    axios.get(baseurlMock + url, params)
+                    axios.get(baseurlMock + url, params:params)
                         .then(response => {
                             resolve(response.data);
                         })
@@ -55,7 +55,7 @@ export function get(url, params) {
 
             })
             .catch((error) => {
-                axios.get(baseurlMock + url, params)
+                axios.get(baseurlMock + url, params:params)
                     .then(response => {
                         resolve(response.data);
                     })
