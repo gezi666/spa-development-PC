@@ -12,10 +12,10 @@ const baseurlMock = ''
     return new Promise((resolve, reject) => {
         axios.post(baseurl + url, params:params)
             .then(response => {
-                if (response.code!='501') {
+                if (response.data.code!='501') {
 
                     resolve(response.data);
-                } else if(response.code=='501') {
+                } else if(response.data.code=='501') {
                     axios.get(baseurlMock + url, params:params)
                         .then(response => {
                             resolve(response.data);
@@ -41,9 +41,9 @@ export function get(url, params) {
     return new Promise((resolve, reject) => {
         axios.get(baseurl + url, params:params)
             .then(response => {
-                if (response.code!="501") {
+                if (response.data.code!="501") {
                     resolve(response.data);
-                } else if(response.code=='501') {
+                } else if(response.data.code=='501') {
                     axios.get(baseurlMock + url, params:params)
                         .then(response => {
                             resolve(response.data);
