@@ -8,6 +8,11 @@
       </ul>
     </nav>
     <List-tab class="tab-list"></List-tab>
+    <div class="testCss">
+      <span>
+        测试sassssssssssssssssssssssss
+      </span>
+    </div>
   </div>
 </template>
 
@@ -27,9 +32,24 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+@import "./../../assets/css/_variable.scss";
+@import "./../../assets/css/_mixin.scss";
 
-  .boot-page,nav {
+.testCss{
+  color:$cl-text;
+  font-size: 30px;
+  height: 100px;
+  width: 200px;
+  @include linear(#00b8fe,#1846a3,90deg);
+  @extend %no-wrap;
+  span{
+    color:$cl-text;
+  }  
+}
+
+
+.boot-page,nav {
   width: 1280px;
   margin: auto;
 }

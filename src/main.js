@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
-import './assets/css/reset.css'
+import './assets/css/index.sass'
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
