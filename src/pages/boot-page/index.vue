@@ -12,7 +12,9 @@
       <span>
         测试sassssssssssssssssssssssss
       </span>
+      
     </div>
+    <div class="btn btn-submit">click</div>
   </div>
 </template>
 
@@ -47,6 +49,8 @@ export default {
     color:$cl-text;
   }  
 }
+
+
 
 
 .boot-page,nav {
