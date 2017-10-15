@@ -17,6 +17,7 @@ npm run build --report
 ```
 
 ## 目录结构
+``` bash
 |-- build                            // 项目构建(webpack)相关代码
 |   |-- build.js                     // 生产环境构建代码
 |   |-- check-version.js             // 检查node、npm等版本
@@ -45,3 +46,6 @@ npm run build --report
 |-- favicon.ico 
 |-- index.html                       // 入口页面
 |-- package.json                     // 项目基本信息
+
+```
+
