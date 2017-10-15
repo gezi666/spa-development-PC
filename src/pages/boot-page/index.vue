@@ -14,29 +14,54 @@
       </span>
       
     </div>
-    <div class="btn btn-submit">click</div>
+    <div class="btn btn-submit" @click="changeChartsData">click</div>
+
+    <div class="echarts-wrapper" style="height:300px;">
+      <echartsBar :echartsData="echartsData"></echartsBar>
+    </div>  
+    
+
+
   </div>
 </template>
 
 <script>
-import ListTab from '@/pages/boot-page/components/list.vue'
+import ListTab from '@/pages/boot-page/sub-components/list.vue'
+import echartsBar from 'components/echartsBar/echartsbar.vue'
+
 export default {
   name: 'bootPage',
   data () {
     return {
-      msg: 'Welcome to 金融小场景'
+      msg: 'Welcome to 金融小场景',
+      echartsData:{}
+    }
+  },
+  created(){
+    this.echartsData = {
+        xdata:["2001","2002","2003","2004","2005"],
+        data:[111,222,333,444,555]
+    }
+  },
+  methods:{
+    changeChartsData(){
+        this.echartsData = {
+            xdata:["2001","2002","2003","2004","2005"],
+            data:[555,111,333,444,222]
+        }
     }
   },
   components:{
-    ListTab
+    ListTab,
+    echartsBar
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import "./../../assets/css/_variable.scss";
-@import "./../../assets/css/_mixin.scss";
+@import "./../../assets/css/variable.scss";
+@import "./../../assets/css/mixin.scss";
 
 .testCss{
   color:$cl-text;

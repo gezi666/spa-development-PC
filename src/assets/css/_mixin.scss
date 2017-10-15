@@ -12,7 +12,7 @@
 
 //渐变
 @mixin linear($color1: #000, $color2: #fff, $angle: 180deg){
-     background: ($color1+$color2)/2;
+    background: ($color1+$color2)/2;
     background: linear-gradient($angle, $color1, $color2);
 }
   
