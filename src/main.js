@@ -4,12 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import echarts from 'echarts'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
 Vue.config.productionTip = false
 import './assets/css/index.sass'
 
 
 Vue.prototype.$echarts = echarts
+
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({

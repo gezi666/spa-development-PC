@@ -34,9 +34,11 @@ exports.cssLoaders = function (options) {
 
     // Extract CSS when that option is specified
     // (which is the case during production build)
+    //背景图显示不出来需要修改这里 
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
+        //publicPath:'../../'
         fallback: 'vue-style-loader'
       })
     } else {

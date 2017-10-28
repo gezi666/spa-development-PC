@@ -2,3 +2,9 @@
 @import './_mixin';
 
 //可以写一些公共样式
+
+//element ui 修改弹窗样式
+
+.el-dialog__header{
+    text-align: center;
+}

@@ -26,12 +26,13 @@
   },
   mounted() {
     this.$nextTick(()=>{
-      this.myChart = this.$echarts.init(this.$refs.chart);   
+         this.myChart = this.$echarts.init(this.$refs.chart);
       this.initChart()
     })
   },
   methods: {
-   initChart() {                      
+   initChart() {
+                            
       let option = {
           color: ['#3398DB'],
           tooltip : {
@@ -102,6 +103,9 @@
               }
           ]
       }  
+      this.myChart.on('click',(params) =>{
+          this.$emit('handleCharts',params.name)
+      })
       this.myChart.setOption(option);
 
     }

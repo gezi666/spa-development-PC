@@ -6,7 +6,9 @@
         <div class="user-area"></div>
       </div>
     </header>
+    
     <router-view class="main"></router-view>
+    
     <footer>
        <span>京ICP备12012279号 版权所有 九次方大数据信息集团有限公司</span>
       <span>Copyright 2015 by Jusfoun.com. All Right Reserved</span>
