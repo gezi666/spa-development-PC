@@ -49,7 +49,7 @@ npm run build --report
 
 ```
 
-##九次方前端模板对脚手架的一些文件更改说明
+## 九次方前端模板对脚手架的一些文件更改说明
 
 1，`build/webpack.base.conf.js`
 这里做了一些配置别名的方法
@@ -169,5 +169,5 @@ mounted() {
 以此图表组件为例，柱图的配置在组件内部定义，我们只传入数据，可在项目任意地方复用，详情请参考模板中的代码
 
 
-##element ui 介绍
+## element ui 介绍
 目前PC项目 建议大家使用elemet ui  模板中 `pages/boot-page/index.vue`中有弹出框实列
