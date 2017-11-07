@@ -4,12 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import echarts from 'echarts'
+/*引入element ui 相关*/
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 
-Vue.config.productionTip = false
 import './assets/css/index.sass'
-
+Vue.config.productionTip = false
 
 Vue.prototype.$echarts = echarts
 

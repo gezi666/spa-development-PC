@@ -16,5 +16,8 @@ export default new Router({
       name: 'scenesOne',
       component: scenesOne
     }
-  ]
+  ],
+   linkActiveClass: 'active'
 })
+
+
