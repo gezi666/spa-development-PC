@@ -6,6 +6,7 @@ import App from './App'
 import router from './router'
 import echarts from 'echarts'
 import ElementUI from 'element-ui'
+import store from './store'
 import 'assets/css/index.scss'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.prototype.$echarts = echarts
@@ -16,6 +17,7 @@ Vue.use(ElementUI);
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

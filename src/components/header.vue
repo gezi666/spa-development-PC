@@ -48,5 +48,37 @@
 
   }
 
+
+  //换肤相关
+  .theme-red{
+    .header-wrap{
+      li{
+        &.active{
+          color: red
+        }
+      }
+    }
+  }
+
+  .theme-blue{
+    .header-wrap{
+      li{
+        &.active{
+          color:blue
+        }
+      }
+    }
+  }
+
+  .theme-yellow{
+    .header-wrap{
+      li{
+        &.active{
+          color: yellow
+        }
+      }
+    }
+  }
+
 </style>
 

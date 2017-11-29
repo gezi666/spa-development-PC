@@ -2,7 +2,7 @@
   "name": "vue",
   "version": "1.0.0",
   "description": "template",
-  "author": "cs-300 <halfmoonvic@gmail.com>",
+  "author": "jusfoun-fe",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -16,7 +16,8 @@
     "element-ui": "^2.0.5",
     "qs": "^6.5.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
