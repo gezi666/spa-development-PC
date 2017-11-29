@@ -39,7 +39,7 @@ exports.cssLoaders = function (options) {
       return ExtractTextPlugin.extract({
         use: loaders,
         //解决build后背景大图无法显示问题
-        publicPath:'../../'
+        publicPath:'../../',
         fallback: 'vue-style-loader'
       })
     } else {
