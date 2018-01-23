@@ -31,8 +31,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/css/variable";
-  @import "~assets/css/mixin";
+  @import "~assets/css/lib-variable";
+  @import "~assets/css/lib-mixin";
   .charts-wrap{
     width: 400px;
     height: 400px;

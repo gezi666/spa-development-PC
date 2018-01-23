@@ -12,22 +12,9 @@ $site-width: 80%;
  * ****************************************
  */
 // 字体颜色
-$cl-txt: #333;
-$cl-txt-hl: #00ffff;
-
-// 三种边框颜色
-$cl-bd-cyan: #0ff;
-$cl-bd-cyan-d: rgba(0, 255, 255, .5);
-$cl-bd-red: #f1174f;
-$cl-bd-red-d: rgba(241, 23, 79, .5);
-$cl-bd-blue: #007dfd;
-$cl-bd-blue-d: rgba(0, 125, 253, .5);
-$cl-bd-green: #00ffb4;
-$cl-bd-green-d: rgba(0, 255, 180, .5);
-$cl-bd-shengreen: #23ff2e;
-$cl-bd-shengreen-d: rgba(35, 255, 46, .5);
-$cl-bd-pure: #00bdff;
-$cl-bd-pure-d: rgba(0, 189, 255, .5);
+$cl-txt: #fff;
+$cl-theme: #ffd900;
+$cl-theme-d: #ffd617;
 
 // 背景色
 $cl-bg: rgba(0, 76, 152, .2);

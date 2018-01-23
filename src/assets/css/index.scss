@@ -1,23 +1,5 @@
-// 重置浏览器样式
-@import "./reset";
+@import "./_lib-reset";        // 重置浏览器样式
+@import "./_lib-base";         // 针对 UI 设计稿而做的一些样式重置
+@import "../font/iconfont.css";     // font 字体
 
-// 针对 UI 设计稿而做的一些样式重置
-@import "./base";
-
-// font 字体
-@import "./iconfont";
-
-// 自定义 elementUI 样式
-@import "./diy-elementui";
-
-// 公共样式
-@import "./public";
-
-// 页面框架布局样式
-@import "./frame";
-
-// 具体功能组件样式
-@import "./button";
-
-// 换肤样式
-@import "./theme";
+@import "./_diy-elementui";   // 自定义 elementUI 样式

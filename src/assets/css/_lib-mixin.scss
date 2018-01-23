@@ -1,4 +1,4 @@
-@import "./variable";
+@import "./lib-variable";
 
 @mixin flex($justify: flex-start, $align-items: center, $dir: row, $wrap: nowrap, $align-content: stretch) {
   display: flex;
@@ -33,7 +33,7 @@
   background: linear-gradient($angle, $color1, $color2);
 }
 
-@mixin animation($type: all, $sec: 0.2s, $animation: ease-in) {
+@mixin animate($type: all, $sec: 0.2s, $animation: ease-in) {
   transition: $type $sec $animation;
 }
 
@@ -53,16 +53,29 @@
   }
 }
 
-@mixin juzhong($boolean: true) {
-  @if $boolean
-   {
+// @mixin juzhong($boolean: true) {
+//   @if $boolean {
+//     top: 50%;
+//     transform: translate3d(0, -50%, 0);
+//   }
+//   @else {
+//     left: 50%;
+//     transform: translate3d(-50%, 0, 0);
+//   }
+// }
+@mixin juzhong($condition: else) {
+  @if $condition==vertical {
     top: 50%;
     transform: translate3d(0, -50%, 0);
-   }
-   @else
-   {
+  }
+  @else if $condition==middle {
     left: 50%;
     transform: translate3d(-50%, 0, 0);
-   }
-
+  }
+  @else {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
 }
+

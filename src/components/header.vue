@@ -3,7 +3,7 @@
       <ul>
         <!-- tag="li" 可以设定 router-link生成什么样的页面元素 -->
         <router-link class="item" tag="li" :to="{name:'home'}">
-          首页
+          <i class="iconfont icon-user"></i>首页
         </router-link>
         <router-link class="item" tag="li" :to="{name:'page1'}">
           sass简易使用
@@ -25,8 +25,8 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/css/variable";
-  @import "~assets/css/mixin";
+  @import "~assets/css/lib-variable";
+  @import "~assets/css/lib-mixin";
   .header-wrap{
     width: 100%;
     height: 40px;
@@ -37,7 +37,7 @@
       display: flex;
       justify-content: flex-end;
       li{
-        color: $cl-txt-hl;
+        color: $cl-txt;
         padding: 0 20px;
         cursor: pointer;
         &.active{

@@ -30,7 +30,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "~assets/css/variable";
-  @import "~assets/css/mixin";
+  @import "~assets/css/lib-variable";
+  @import "~assets/css/lib-mixin";
 
 </style>
