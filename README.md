@@ -17,7 +17,7 @@
     > build之后修改路径 :          `config/index.js` --assetsPublicPath: './'
 
 ### 2.脚手架SRC目录搭建结构
-    ```
+```
     |-- src                              // 源码目录
     |   |-- api                          // 获取数据接口API相关文件
     |   |   |-- api.js                   // axios封装方法
